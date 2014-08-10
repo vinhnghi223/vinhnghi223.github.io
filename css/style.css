@@ -220,7 +220,11 @@ a.small {
 .search p{
   color: #8ACDDD;
 }
-/* Artist List Styles */
+
+.search a{
+  color:white;
+}
+/* Projects List Styles */
 
 .projectList {
   background: #EEE8D5;

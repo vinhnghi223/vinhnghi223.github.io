@@ -12,7 +12,7 @@
 <div class="main" ng-controller = "MyController">
   <div class="search">
     <h1>My Github Directory (Beta)</h1>
-    <p>This web app provides a clean looking into <a href="https://github.com/vinhnghi223">my Github account</a>. It is built using AngularJS and still on development. You can search by project name or by the technologies you are interested in.  Thanks for visiting!</p>
+    <p>This web app provides a clean looking into <a href="https://github.com/vinhnghi223">my Github account</a>. It is built using AngularJS and still on development. You can search by project name or by main technologies used in the project.  Thanks for visiting!</p>
     <label>search: </label>
     <input ng-model="query" placeholder="Type a value, for example,'AngularJS' or 'Android' " autofocus />
 
@@ -20,11 +20,10 @@
       <select ng-model="searchOrder"> 
         <option value="rating">Rating</option>
         <option value="name">Name</option>
+        <option value="cat">Categories</option>
       </select>
     </label>
     
-
-
     <label class="formgroup">
       <input type="radio" ng-model="direction" name="direction">
       ascending
@@ -42,10 +41,9 @@
       
       <div class="info">
           <h2>{{item.name}}</h2>
+          <p>{{item.cat}}</p>
           <h3>{{item.technologies}}</h3>
-          <div class="rating">
-            <img ng-src="images/{{item.rating}}.png">
-          </div><br/>
+          <img ng-src="images/{{item.rating}}.png"><br/>
           <div class="links" ng-repeat="link in item.links">
               <a href="{{link[1]}}"><img ng-src="images/{{link[0]}}.jpg"></a>
           </div>

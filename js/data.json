@@ -1,6 +1,7 @@
 [
   {
-    "name":"Laurea Room Finder Hybrid App",
+    "name":"Laurea Room Finder",
+    "cat":"Mobile App",
     "technologies":"HTML5, CSS3, JavaScript, Jquery, Cordova",
     "rating":"3",
     "links":[
@@ -13,6 +14,7 @@
   },
   {
     "name":"Pedometer App",
+    "cat":"Mobile and Web App",
     "technologies":"Android, Java, AngularJS, FireAngular, Bootstrap 3, jQuery, jQuery Highchart, Firebase, D3.js",
     "rating":"3",
     "links":[
@@ -25,6 +27,7 @@
   }, 
   {
     "name":"Smart Mobile Expense Manager",
+    "cat":"Mobile App",
     "technologies":"Android, Android Studio, Java",
     "rating":"3",
     "links":[
@@ -36,6 +39,7 @@
   },   
   {
     "name":"Real Time Menu App",
+    "cat":"Mobile and Web App",
     "technologies":"Android, Java, Eclipse, Wordpress, AngularJS, AngularFire, Bootstrap 3, Firebase",
     "rating":"3",
     "links":[
@@ -47,6 +51,7 @@
   },
   {
     "name":"Bar Laurea Android Application",
+    "cat":"Mobile App",
     "technologies":"Android, Java, Eclipse",
     "rating":"3",
     "links":[
@@ -57,6 +62,7 @@
   },  
   {
     "name":"Restaurant App",
+    "cat":"Mobile App",
     "technologies":"Cordova, jQuery Mobile",
     "rating":"2",
     "links":[
@@ -68,6 +74,7 @@
 
   {
     "name":"Note Taking App For Android",
+    "cat":"Mobile App",
     "technologies":"Android, Eclipse, Java",
     "rating":"2",
     "links":[
@@ -78,6 +85,7 @@
   },
   {
     "name":"Polish Zloty To Euro Conversion",
+    "cat":"Mobile App",
     "technologies":"Android, Android Studio, Java",
     "rating":"0",
     "links":[
@@ -88,8 +96,9 @@
   },
   {
     "name":"Sheep Counting App",
-    "rating":"1",
+    "cat":"Mobile App",
     "technologies":"PhoneGap, HTML5, jQuery Mobile",
+    "rating":"1",
     "links":[
       ["github","https://github.com/vinhnghi223/Body-Mass-Index-Calculator"],
       ["download","https://build.phonegap.com/apps/700791/share"]
@@ -98,8 +107,9 @@
   },
   {
     "name":"Body Mass Index Calculator",
-    "rating":"1",
+    "cat":"Mobile App",
     "technologies":"Android, Eclipse, Java",
+    "rating":"1",
     "links":[
       ["github","https://github.com/vinhnghi223/Body-Mass-Index-Calculator"]
     ],
@@ -107,6 +117,7 @@
   },
   {
     "name":"Anjalanvpk.fi",
+    "cat":"Web App",
     "technologies":"Drupal, JavaScript",
     "rating":"3",
     "links":[
@@ -117,6 +128,7 @@
   },
   {
     "name":"Lake Volleyball",
+    "cat":"Game",
     "technologies":"HTML5, JavaScript, Construct2",
     "rating":"2",
     "links":[
@@ -127,6 +139,7 @@
   },
   {
     "name":"The Great Escape",
+    "cat":"Game",
     "technologies":"HTML5, JavaScript, Construct2",
     "rating":"3",
     "links":[
@@ -137,6 +150,7 @@
   },
   {
     "name":"Hetihierontaan.fi",
+    "cat":"Web",
     "technologies":"Wordpress, PHP, HTML, JavaScript, CSS",
     "rating":"2",
     "links":[
@@ -147,6 +161,7 @@
   },
   {
     "name":"Aiesec-hy.fi",
+    "cat":"Web",
     "technologies":"HTML, JavaScript, CSS, Bootstrap",
     "rating":"3",
     "links":[
@@ -157,6 +172,7 @@
   },
   {
     "name":"Kipukorjaus.fi",
+    "cat":"Web",
     "technologies":"HTML, JavaScript, CSS, Bootstrap",
     "rating":"2",
     "links":[
@@ -164,6 +180,27 @@
       ["demo","http://kipukorjaus.fi/"]
     ],
     "description":""
-  }           
+  },
+  {
+    "name":"codingisloving",
+    "cat":"Web",
+    "technologies":"PHP, Wordpress",
+    "rating":"2",
+    "links":[
+      ["demo","http://www.codingisloving.com/"]
+    ],
+    "description":""
+  },
+  {
+    "name":"vinhnghi223.github.io",
+    "cat":"Web",
+    "technologies":"AngularJS, HTML, CSS",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/vinhnghi223.github.io"],
+      ["demo","vinhnghi223.github.io"]
+    ],
+    "description":""
+  }              
 ]
 
