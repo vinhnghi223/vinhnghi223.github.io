@@ -12,14 +12,13 @@
 <div class="main" ng-controller = "MyController">
   <div class="search">
     <h1>My Github Directory (Beta)</h1>
-    <p>My github is growing so I decided to make a small app using AngularJS to offer visitors like you a better view. You can search by project name or by the technologies you are interested in. This web app is still on development. Thanks for visiting!</p>
+    <p>This web app provides a clean looking into my Github account. It is built using AngularJS and still on development. You can search by project name or by the technologies you are interested in.  Thanks for visiting!</p>
     <label>search: </label>
-    <input ng-model="query" placeholder="Type a value, for example,Select ordered by 'Technologies' and type 'AngularJS' " autofocus />
+    <input ng-model="query" placeholder="Type a value, for example,'AngularJS' or 'Java' " autofocus />
 
     <label class="formgroup">by:
       <select ng-model="searchOrder"> 
         <option value="rating">Rating</option>
-        <option value="technologies">Technologies</option>
         <option value="name">Name</option>
       </select>
     </label>
