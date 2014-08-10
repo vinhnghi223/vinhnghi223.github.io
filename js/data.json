@@ -1,0 +1,169 @@
+[
+  {
+    "name":"Laurea Room Finder Hybrid App",
+    "technologies":"HTML5, CSS3, JavaScript, Jquery, Cordova",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Room-and-Offices-Finder"],
+      ["demo","http://www.codingisloving.com/WEBAPPS/CRoom-and-Offices-Finder/index.html"],
+      ["download","https://play.google.com/store/apps/details?id=fi.virgo.lrf"],
+      ["playstore","https://play.google.com/store/apps/details?id=fi.virgo.lrf"]
+    ],
+    "description":"A great lightweight app that allows students to quickly locate rooms in just less than 0.1 second."
+  },
+  {
+    "name":"Pedometer App",
+    "technologies":"Android, Java, AngularJS, FireAngular, Bootstrap 3, jQuery, jQuery Highchart, Firebase, D3.js",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Pedometer-App"],
+      ["demo","http://goo.gl/tuD8Vz"],
+      ["download","http://goo.gl/THILXx"],
+      ["youtube","http://goo.gl/S9762r"]
+    ],
+    "description":""
+  }, 
+  {
+    "name":"Smart Mobile Expense Manager",
+    "technologies":"Android, Android Studio, Java",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Smart-Mobile-Expense-Manager"],
+      ["download","https://github.com/PROMAND/Project-5/blob/master/smem-1.0.rar"],
+      ["youtube","http://goo.gl/ExLgMx"]
+    ],
+    "description":""
+  },   
+  {
+    "name":"Real Time Menu App",
+    "technologies":"Android, Java, Eclipse, Wordpress, AngularJS, AngularFire, Bootstrap 3, Firebase",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Real-Time-Menu-App"],
+      ["demo","http://goo.gl/WnNuzm"],
+      ["download","https://play.google.com/store/apps/details?id=fi.virgo.barlaurea"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Bar Laurea Android Application",
+    "technologies":"Android, Java, Eclipse",
+    "rating":"3",
+    "links":[
+      ["youtube","https://www.youtube.com/watch?v=3MRKoL75MOo"],
+      ["playstore","coming-soon-september-2014"]
+    ],
+    "description":""
+  },  
+  {
+    "name":"Restaurant App",
+    "technologies":"Cordova, jQuery Mobile",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Restaurant-App"],
+      ["demo","http://www.codingisloving.com/WEBAPPS/CRestaurant-App/index.html"]
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Note Taking App For Android",
+    "technologies":"Android, Eclipse, Java",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Note-Taking-App-For-Android"],
+      ["download","https://github.com/vinhnghi223/Note-Taking-App-For-Android/blob/master/SimpleNoteForAndroid.apk"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Polish Zloty To Euro Conversion",
+    "technologies":"Android, Android Studio, Java",
+    "rating":"0",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Polish-Zloty-To-Euro-Conversion"],
+      ["download","https://github.com/vinhnghi223/Polish-Zloty-To-Euro-Conversion/blob/master/pln2eur-v1.apk"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Sheep Counting App",
+    "rating":"1",
+    "technologies":"PhoneGap, HTML5, jQuery Mobile",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Body-Mass-Index-Calculator"],
+      ["download","https://build.phonegap.com/apps/700791/share"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Body Mass Index Calculator",
+    "rating":"1",
+    "technologies":"Android, Eclipse, Java",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Body-Mass-Index-Calculator"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Anjalanvpk.fi",
+    "technologies":"Drupal, JavaScript",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/anjalanvpk.fi"],
+      ["demo","http://anjalanvpk.fi/sis%C3%A4lt%C3%B6/ajoneuvot"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Lake Volleyball",
+    "technologies":"HTML5, JavaScript, Construct2",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/HTML5-GAMES/tree/master/Lake%20Volleyball"],
+      ["demo","http://goo.gl/7uUqLx"]
+    ],
+    "description":""
+  },
+  {
+    "name":"The Great Escape",
+    "technologies":"HTML5, JavaScript, Construct2",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/HTML5-GAMES/tree/master/The%20Great%20Escape"],
+      ["demo","http://goo.gl/bRNuR0"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Hetihierontaan.fi",
+    "technologies":"Wordpress, PHP, HTML, JavaScript, CSS",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/hetihierontaan.fi"],
+      ["demo","http://www.hetihierontaan.fi/"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Aiesec-hy.fi",
+    "technologies":"HTML, JavaScript, CSS, Bootstrap",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/aiesec-hy.fi"],
+      ["demo","http://goo.gl/5D9V7i"]
+    ],
+    "description":""
+  },
+  {
+    "name":"Kipukorjaus.fi",
+    "technologies":"HTML, JavaScript, CSS, Bootstrap",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/WEB-LAB/tree/gh-pages/hoi2.info"],
+      ["demo","http://kipukorjaus.fi/"]
+    ],
+    "description":""
+  }           
+]
+
