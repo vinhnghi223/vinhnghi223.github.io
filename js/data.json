@@ -13,7 +13,7 @@
     "description":"A great lightweight app that allows students to quickly locate rooms in just less than 0.1 second."
   },
   {
-    "name":"Pedometer App",
+    "name":"Real Time Pedometer App",
     "cat":"Mobile and Web App",
     "technologies":"Android, Java, AngularJS, FireAngular, Bootstrap 3, jQuery, jQuery Highchart, Firebase, D3.js",
     "rating":"3",
@@ -45,7 +45,7 @@
     "links":[
       ["github","https://github.com/vinhnghi223/Real-Time-Menu-App"],
       ["demo","http://goo.gl/WnNuzm"],
-      ["download","https://play.google.com/store/apps/details?id=fi.virgo.barlaurea"]
+      ["download","http://goo.gl/WdPE0E"]
     ],
     "description":""
   },
