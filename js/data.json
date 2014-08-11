@@ -201,6 +201,17 @@
       ["demo","vinhnghi223.github.io"]
     ],
     "description":""
-  }              
+  },
+  {
+    "name":"QR Code Generator",
+    "cat":"Hybrid",
+    "technologies":"AngularJS, HTML, CSS",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/WEB-APPS-PROJECTS/tree/gh-pages/QR-Generator"],
+      ["demo","http://htmlpreview.github.io/?https://github.com/vinhnghi223/WEB-APPS-PROJECTS/blob/gh-pages/QR-Generator/www/index.html"]
+    ],
+    "description":""
+  }               
 ]
 
