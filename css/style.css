@@ -137,7 +137,7 @@ a.small {
   color: #EEE8D5;
   width: 90%;
   min-width: 320px;
-  max-width: 500px;
+  max-width: 625px;
   margin: 0 auto;
   margin-top: 30px;
   padding: 20px 30px;
@@ -230,7 +230,7 @@ a.small {
   background: #EEE8D5;
   
   min-width: 320px;
-  max-width: 500px;
+  max-width: 625px;
   margin: 0 auto;
   margin-bottom: 30px;
   opacity: .95;
@@ -282,7 +282,7 @@ a.small {
   color: #0F4150;
   
   min-width: 320px;
-  max-width: 620px;
+  max-width: 625px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
