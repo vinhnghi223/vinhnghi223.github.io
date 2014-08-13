@@ -61,12 +61,12 @@
     "description":""
   },  
   {
-    "name":"Restaurant App",
+    "name":"Product Showcase App",
     "cat":"Mobile App",
     "technologies":"Cordova, jQuery Mobile",
     "rating":"2",
     "links":[
-      ["github","https://github.com/vinhnghi223/Restaurant-App"],
+      ["github","https://github.com/vinhnghi223/Product-Showcase-App"],
       ["demo","http://www.codingisloving.com/WEBAPPS/CRestaurant-App/index.html"]
     ],
     "description":""
