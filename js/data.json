@@ -212,6 +212,16 @@
       ["demo","http://htmlpreview.github.io/?https://github.com/vinhnghi223/WEB-APPS-PROJECTS/blob/gh-pages/QR-Generator/www/index.html"]
     ],
     "description":""
+  } ,
+  {
+    "name":"Game Portfolio Wordpress Theme",
+    "cat":"Web",
+    "technologies":"Wordpress, PHP, HTML, CSS",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Game-Portfolio-Website"],
+    ],
+    "description":""
   }               
 ]
 
