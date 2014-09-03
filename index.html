@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>My Github Directory</title>
   <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-animate.min.js"></script>  
+  
   <script src="js/controllers.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +39,7 @@
   </div>
   
   <ul class="projectList">
-    <li class="artist cf" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction">
+    <li ng-animate="'animate'" class="artist cf" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction">
       
       <div class="info">
           <h2>{{item.name}}</h2>
