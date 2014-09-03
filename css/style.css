@@ -321,6 +321,7 @@ a.small {
   height:auto;
 }
 
+/*should modify all artist to project
 .artist.ng-enter.ng-enter-active,
 .artist.ng-leave {
   opacity: 1;
