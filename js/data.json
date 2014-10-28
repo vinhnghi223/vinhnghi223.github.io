@@ -1,5 +1,16 @@
 [
   {
+    "name":"Near By Location Android App",
+    "cat":"Mobile App",
+    "technologies":"Java, Android Studio",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Near-By-Location-Android-App"],
+      ["demo","http://www.codingisloving.com/WEBAPPS/CRoom-and-Offices-Finder/index.html"]
+    ],
+    "description":"A great lightweight app that allows students to quickly locate rooms in just less than 0.1 second."
+  },
+  {
     "name":"Laurea Room Finder",
     "cat":"Mobile App",
     "technologies":"HTML5, CSS3, JavaScript, Jquery, Cordova",
