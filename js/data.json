@@ -1,14 +1,24 @@
 [
   {
     "name":"Createtrips.com",
-    "cat":"Web App",
-    "technologies":"HTML, CSS, JavaScript",
+    "cat":"Web",
+    "technologies":"HTML, CSS, JavaScript, Wordpress",
     "rating":"3",
     "links":[
       ["github","https://github.com/vinhnghi223/createtrips.com"],
-      ["demo","createtrips.com"]
+      ["demo","http://createtrips.com/"]
     ],
-    "description":"A great lightweight app that allows students to quickly locate rooms in just less than 0.1 second."
+    "description":"CreateTrips is a social trip planner for the smart traveler.  It is here to turn smartphones and tablets into the storytelling devices of tomorrow."
+  },
+  {
+    "name":"Kokouspaketit.com",
+    "cat":"Web",
+    "technologies":"HTML, CSS, JavaScript, PHP, Drupal",
+    "rating":"3",
+    "links":[
+      ["demo","http://www.kokouspaketit.com/"]
+    ],
+    "description":"You can find a full range of conference packages easily on this website"
   },
   {
     "name":"Near By Location Android App",
