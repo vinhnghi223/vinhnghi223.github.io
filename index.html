@@ -39,13 +39,13 @@
   </div>
   
   <ul class="projectList">
-    <li ng-animate="'animate'" class="artist cf" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction">
+    <li ng-animate="'animate'" class="project cf" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction">
       
       <div class="info">
+          <img ng-src="images/{{item.rating}}.png">
           <h2>{{item.name}}</h2>
           <p>{{item.cat}}</p>
           <h3>{{item.technologies}}</h3>
-          <img ng-src="images/{{item.rating}}.png"><br/>
           <div class="links" ng-repeat="link in item.links">
               <a target="_blank" href="{{link[1]}}"><img ng-src="images/{{link[0]}}.jpg"></a>
           </div>

@@ -23,12 +23,12 @@
   {
     "name":"Ventoura",
     "cat":"Mobile App",
-    "technologies":"Android, Eclipse",
-    "rating":"3",
+    "technologies":"Android, Eclipse, Android Studio",
+    "rating":"5",
     "links":[
-      
+      ["demo","http://www.ventoura.com/"]
     ],
-    "description":"Offer the local experience for the travellers"
+    "description":"Offer the local experience for the travellers. Launching soon!"
   },  
   {
     "name":"Near By Location Android App",

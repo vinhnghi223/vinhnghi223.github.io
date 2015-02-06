@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html {
-  background: grey;
+  background: rgb(5, 5, 55);
   min-height: 100%;
   height: auto;
 }
@@ -133,8 +133,8 @@ a.small {
 /* Search Styles */
 
 .search {
-  background: #063642;
-  color: #EEE8D5;
+  /*background: #063642;*/
+  color: white;
   width: 90%;
   min-width: 320px;
   max-width: 625px;
@@ -145,7 +145,7 @@ a.small {
 }
 
 .search h1 {
-  color: #EEE8D5;
+  color: white;
 }
 
 .btn {
@@ -188,12 +188,13 @@ a.small {
 .search input {
   font-family: 'Droid Sans', sans-serif;
   width: 100%;
-  padding: 10px 0 10px 15px;
+  padding: 8px 0 8px 8px;
   font-size: 1rem;
-  color: #475B62;
+  color: white;
   background: rgba(255,255,255,0.4);
   border: 1px solid rgba(255,255,255,0.2);
   outline: 0;
+  margin-bottom: 15px;
 }
 
 .search .formgroup input {
@@ -209,9 +210,9 @@ a.small {
 
 .search select {
   display: inline;
-  padding: 10px 0 10px 15px;
+  padding: 8px 0 8px 8px;
   font-size: 1rem;
-  color: #475B62;
+  color: rgb(56, 56, 9);
   background: rgba(255,255,255,0.4);
   border: 1px solid rgba(0,0,0,0.3);
   outline: 0;
@@ -262,7 +263,6 @@ a.small {
 
 .projectList li:hover {
   background: #FDF6E3;
-
   opacity: 1;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -270,24 +270,32 @@ a.small {
   transform: scale(1.2);  
 }
 
-.artist img {
+.project img {
   display: block;
-  float: left;
+  float: right;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.artist info {
+.project .links img:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
+.project info {
   display: block;
   float: left;
   padding-left: 120px !important;
 }
 
-.artist:last-child {
+.project:last-child {
   border-bottom:none;
 }
 
-.artistinfo {
+.projectinfo {
   font-size: 1.1em;
   line-height: 160%;
   background: #EEE8D5;
@@ -302,17 +310,17 @@ a.small {
   z-index: 20;
 }
 
-.artistinfo h1{
+.projectinfo h1{
   font-size: 1.8em;
   margin-bottom: 0;
 }
 
-.artistinfo img {
+.projectinfo img {
   width: 40%;
   max-width: 130px;
 }
 
-.artistinfo .btn {
+.projectinfo .btn {
 
 }
 
@@ -321,16 +329,16 @@ a.small {
   height:auto;
 }
 
-/*should modify all artist to project
-.artist.ng-enter.ng-enter-active,
-.artist.ng-leave {
+/*should modify all project to project
+.project.ng-enter.ng-enter-active,
+.project.ng-leave {
   opacity: 1;
   height: 80px;
   overflow: hidden;
 }
 
-.artist.ng-leave.ng-leave-active,
-.artist.ng-enter {
+.project.ng-leave.ng-leave-active,
+.project.ng-enter {
   opacity: 0;
   height: 0;
   overflow: hidden;
