@@ -191,7 +191,6 @@ a.small {
   width: 100%;
   padding: 8px 0 8px 8px;
   font-size: 1rem;
-  color: white;
   background: rgba(255,255,255,0.4);
   border: 1px solid rgba(0,0,0,0.3);
   outline: 0;
@@ -199,6 +198,7 @@ a.small {
 }
 
 .search .formgroup input {
+  color: black;
   border: 1px solid rgba(0,0,0,0.3);
   display: inline;
   width: auto;
