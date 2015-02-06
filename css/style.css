@@ -241,6 +241,7 @@ a.small {
 }
 
 .projectList li {
+  background: #FDF6E3;
   margin: 0;
   padding: 10px 10px 0 10px;
   border-bottom: 1px solid black;
