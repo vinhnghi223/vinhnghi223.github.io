@@ -244,10 +244,7 @@ a.small {
   background: #FDF6E3;
   margin: 0;
   padding: 10px 10px 0 10px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  opacity: .9;
+  border: 1px solid black;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
