@@ -107,14 +107,16 @@ h1{
 h2{ 
   font-size: 1.5rem;
   line-height: 90%;
-  color: #c61c6f;
+  color: #C80303;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h3{ 
   margin-top: 0;
   color: #bd3613;
   line-height: 110%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -245,7 +247,7 @@ a.small {
 .projectList li {
   margin: 0;
   padding: 10px 10px 0 10px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   opacity: .9;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -261,18 +263,17 @@ a.small {
 .projectList li:hover {
   background: #FDF6E3;
   opacity: 1;
+  border: 1px solid black;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);  
-  z-index: 1000;
 }
 
 .project img {
   display: block;
   float: right;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px 10px 10px 0;
 }
 
 .project .links img:hover {
