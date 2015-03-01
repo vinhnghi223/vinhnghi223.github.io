@@ -19,6 +19,17 @@
       ["demo","http://www.kokouspaketit.com/"]
     ],
     "description":"You can find a full range of conference packages easily on this website"
+  }, 
+  {
+    "name":"Student Directory Web App",
+    "cat":"Web",
+    "technologies":"MEAN (MongoDB, ExpressJS, AngularJS, NodeJS), Bootstrap",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Student-Directory"],
+      ["demo","https://student-directory-uog.herokuapp.com/#/"]
+    ],
+    "description":"A simple yet efficient web app for managing student buit using MEAN stack"
   },
   {
     "name":"Ventoura",
