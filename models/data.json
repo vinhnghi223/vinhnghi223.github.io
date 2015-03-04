@@ -248,11 +248,11 @@
   {
     "name":"Vinhnghi223.github.io",
     "cat":"Web",
-    "technologies":"AngularJS, HTML, CSS, NodeJS",
+    "technologies":"AngularJS, Grunt, Yeoman, Bower, HTML, CSS, etc.",
     "rating":"2",
     "links":[
       ["github","https://github.com/vinhnghi223/vinhnghi223.github.io"],
-      ["demo","vinhnghi223.github.io"]
+      ["demo","http://vinhnghi223.github.io/#/"]
     ],
     "description":""
   },
