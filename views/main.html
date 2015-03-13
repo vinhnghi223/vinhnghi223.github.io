@@ -1,1 +1,53 @@
-<div class="main"> <div class="search"> <p>Hi there! This is an overview of some of the projects I have done so far. Search by enter any keywords. Have fun!</p> <label>search: </label> <input ng-model="query" placeholder="Type something, for example,'AngularJS' or 'Android' " autofocus> <label class="formgroup">Order by: <select ng-model="searchOrder"> <option value="rating">Rating <option value="name">Name <option value="cat">Categories </select> </label> <label class="formgroup"> <input type="radio" ng-model="direction" name="direction"> ascending </label> <label class="formgroup"> <input type="radio" ng-model="direction" name="direction" value="reverse"> descending </label> </div> <ul class="projectList" ui-sortable> <li ng-animate="'animate'" class="project cf" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction" style="padding:5px 10px; cursor: move"> <div class="info"> <img title="Rating" ng-src="images/{{item.rating}}.png"> <h2 title="Project Name">{{item.name}}</h2> <p title="Category">{{item.cat}}</p> <h3 title="Technologies">{{item.technologies}}</h3> <div class="links" ng-repeat="link in item.links"> <a target="_blank" href="{{link[1]}}"><img ng-src="images/{{link[0]}}.jpg"></a> </div> </div> </li> </ul> </div>
+<div class="main">
+  <div class="search">
+
+    <label class="formgroup">
+      <input id="project-search-box" ng-model="query" placeholder="Type something, for example,'Web', AngularJS' or 'Android' etc. " autofocus />
+    </label>
+
+    <label class="formgroup">Sort by:
+      <select ng-model="searchOrder"> 
+        <option value="rating">Rating</option>
+        <option value="name">Name</option>
+        <option value="cat">Categories</option>
+      </select>
+    </label>
+    
+    <label class="formgroup">
+      <input type="radio" ng-model="direction" name="direction">
+      ASC
+    </label>
+
+    <label class="formgroup">
+      <input type="radio" ng-model="direction" name="direction" value="reverse">
+      DESC
+    </label>     
+
+    <label class="formgroup">
+      <a href="http://goo.gl/forms/OLcE1amCVa" target="_blank"><img id="feedback-btn" alt="feedback" src="images/feedback.png"></a>
+    </label>   
+  </div>
+  
+  <div class="projectList ul" ui-sortable>
+    <div ng-animate="'animate'" class="col-xs-6 col-md-4 project cf li" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction" style="cursor: move;">
+      
+      <div class="info flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front" style="background-image: url('images/project-thumbnails/{{item.name}}.png'); background-size: cover">
+            <h2 title="Project Name">{{item.name}}</h2>
+          </div><!--front-->
+          <div class="back" style="padding:5px 5px;">
+            
+            <p title="Category">{{item.name}} ({{item.cat}})</p>
+            <img class="rating" title="Rating" ng-src="images/rating/{{item.rating}}.png">
+            <h3 title="Technologies">{{item.technologies}}</h3>
+            <div class="links" ng-repeat="link in item.links">
+                <a target="_blank" href="{{link[1]}}"><img class="links" ng-src="images/links/{{link[0]}}.jpg"></a>
+            </div>
+          </div>
+        </div><!--flipper-->
+      </div>
+      
+    </div>
+  </div>
+</div>

@@ -21,7 +21,7 @@
     "description":"You can find a full range of conference packages easily on this website"
   }, 
   {
-    "name":"Student Directory Web App",
+    "name":"Student Directory",
     "cat":"Web",
     "technologies":"MEAN (MongoDB, ExpressJS, AngularJS, NodeJS), Bootstrap",
     "rating":"3",
@@ -47,8 +47,7 @@
     "technologies":"Java, Android Studio",
     "rating":"3",
     "links":[
-      ["github","https://github.com/vinhnghi223/Near-By-Location-Android-App"],
-      ["demo","http://www.codingisloving.com/WEBAPPS/CRoom-and-Offices-Finder/index.html"]
+      ["github","https://github.com/vinhnghi223/Near-By-Location-Android-App"]
     ],
     "description":"A great lightweight app that allows students to quickly locate rooms in just less than 0.1 second."
   },
