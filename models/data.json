@@ -138,6 +138,7 @@
   },
   {
     "name":"Polish Zloty To Euro Conversion",
+    "noImage":true,
     "cat":"Mobile App",
     "technologies":"Android, Android Studio, Java",
     "rating":"1",
@@ -153,13 +154,14 @@
     "technologies":"PhoneGap, HTML5, jQuery Mobile",
     "rating":"1",
     "links":[
-      ["github","https://github.com/vinhnghi223/Body-Mass-Index-Calculator"],
+      ["github","https://github.com/vinhnghi223/Sheep-Counting-App"],
       ["download","https://build.phonegap.com/apps/700791/share"]
     ],
     "description":""
   },
   {
     "name":"Body Mass Index Calculator",
+    "noImage":true,
     "cat":"Mobile App",
     "technologies":"Android, Eclipse, Java",
     "rating":"1",
@@ -257,6 +259,7 @@
   },
   {
     "name":"QR Code Generator",
+    "noImage":true,
     "cat":"Hybrid",
     "technologies":"AngularJS, HTML, CSS",
     "rating":"2",
