@@ -17,7 +17,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
+
   font: inherit;
   font-size: 100%;
   vertical-align: baseline; }
@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html {
-  background-image: url("../images/bg.png");
+  background-color: #D3D3D3;
   min-height: 100%;
   height: auto;
 }
@@ -134,7 +134,7 @@ a.small {
     border: 1px solid black;
     padding: 10px;
     z-index: 20;
-    background-image: url("../images/bg.png");
+    background-color: #D3D3D3;
 }
 
 .search h1 {
@@ -152,7 +152,7 @@ a.small {
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
+
     background: #C61C6F;
     color: #FCF4DC;
     -webkit-user-select: none;
@@ -247,6 +247,7 @@ a.small {
 }
 
 .project img.links {
+  border: 1px solid black;
   display: block;
   float: right;
   margin: 10px 10px 10px 0;
@@ -320,16 +321,18 @@ a.small {
   padding-right: 0px;
 }
 
-.formgroup #feedback-btn{
+#feedback-btn{
   width:50px;
   height:50px;
   position: absolute; 
   right:7px; 
   top:7px;";
+  border: 1px solid;
 }
 
 .formgroup #feedback-btn:hover{
   opacity: 0.8;
+  border: 1px solid;
 }
 
 /*----------------------------------------*/
@@ -384,4 +387,17 @@ a.small {
 .card.effect__click.flipped .card__back {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
+}
+
+/* Animation on typing */
+.project.ng-enter.ng-enter-active,
+.project.ng-leave{
+  opacity: 1;
+  overflow: hidden;
+}
+
+.project.ng-leave.ng-leave-active,
+.project.ng-enter{
+  opacity: 0;
+  overflow: hidden;
 }

@@ -2,7 +2,7 @@
   <div class="search">
 
     <label class="formgroup">
-      <input id="project-search-box" ng-model="query" placeholder="Type something, for example,'Web', AngularJS' or 'Android' etc. " autofocus />
+      <input id="project-search-box" ng-model="query" placeholder="Type something, for example,'Web', AngularJS' or 'Android' etc. " autofocus ng-change="keydown()" />
     </label>
 
     <label class="formgroup">Sort by:
@@ -32,7 +32,7 @@
     <div ng-animate="'animate'" class="col-xs-6 col-md-4 project cf li" ng-repeat="item in projects  | filter: query | orderBy: searchOrder:direction" style="cursor: move;">
       
       <div class="info">
-        <div class="card effect__click">
+        <div class="card effect__click" ng-click="flip($event)">
           <div class="card__front" style="background-image: url('images/project-thumbnails/{{item.noImage ? 'no-image' : item.name}}.png'); background-size: cover" title="click me!">
             <h2 title="Project Name">{{item.name}}</h2>
           </div><!--front-->

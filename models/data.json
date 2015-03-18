@@ -278,6 +278,29 @@
       ["github","https://github.com/vinhnghi223/Game-Portfolio-Website"]
     ],
     "description":""
-  }               
+  } ,
+  {
+    "name":"Giggle Bug",
+    "cat":"Game",
+    "technologies":"JavaScript, HTML, CSS",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Game-Portfolio-Website"],
+      ["demo","http://www.codingisloving.com/WEBAPPS/gigglebug/index2.html"]
+    ],
+    "description":""
+  } ,
+  {
+    "name":"Finnish Tax Office App",
+    "cat":"Web",
+    "technologies":"JavaScript, HTML, CSS, Axure",
+    "rating":"2",
+    "links":[
+      ["github","https://github.com/vinhnghi223/Finnish-Tax-Office-App"],
+      ["demo","http://clm2qc.axshare.com/"]
+    ],
+    "description":""
+  }                   
 ]
+
 
