@@ -345,7 +345,7 @@ angular.module('vinhnghigithubioApp')
     $scope.projects = data;
     $scope.searchOrder = 'rating';
     $scope.direction='reverse';
-    
+
     //Generate autocomplete array
     var projectNameArr=[],catArr=[],techArr=[];
     for (var i = 0; i < data.length; i++) { 

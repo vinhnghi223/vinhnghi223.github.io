@@ -350,7 +350,9 @@ a.small {
 /**
  * Cards flipping styles
  */
-
+.card__front{
+  background-size: cover;
+}
 .card__front h2{
   background-color: rgba(0,0,0,0.7);
   font-size: 1.25em;
@@ -358,6 +360,7 @@ a.small {
   padding: 10px;
   text-align: center;
 }
+
 
  .card, .card__front, .card__back {
   width: 100%;
