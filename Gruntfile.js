@@ -7,29 +7,28 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-json-minify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-sass');
+	// grunt.loadNpmTasks('grunt-contrib-watch');
+	// grunt.loadNpmTasks('grunt-contrib-sass');
 	
 	grunt.initConfig({
 		concat: {
 			scripts: {
-				src: ['dev/scripts/app.js',
-				'dev/scripts/controllers/main.js'],
+				src: ['dev/scripts/autocomplete.js','dev/scripts/app.js','dev/scripts/controllers/main.js'],
 				dest: 'dist/scripts/app.js'
 			},
 			styles: {
-				src: ['dist/styles/fonts.css','dev/styles/style.css'],
+				src: ['dist/styles/fonts.css','dev/styles/style.css','dev/styles/autocomplete.css'],
 				dest: 'dist/styles/app.css'
 			}
 		},
-		sass: {
-			app: {
-				files: {
-					'tmp/app.css': ['sass/style.scss'] //not use yet
-				}
-			}
-		},
-		copy: {
+		// sass: {
+		// 	app: {
+		// 		files: {
+		// 			'tmp/app.css': ['sass/style.scss'] //not use yet
+		// 		}
+		// 	}
+		// },
+		copy: { //copy json file
 		  main: {
 		    src: 'dev/models/data.json',
 		    dest: 'dist/models/data.json',
@@ -50,7 +49,7 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		'json-minify': {
+		'json-minify': { //not include copy
 		  build: {
 		    files: 'dist/models/*.json'
 		  }
@@ -67,24 +66,24 @@ module.exports = function(grunt){
 		      }
 		    }
 		},
-		watch: {
-			scripts: {
-				files: [''],
-				tasks: ['coffee', 'concat:scripts', 'uglify'],
-				options: {
-					spawn: false,
-					livereload : true
-				}
-			},
-			styles: {
-				files: [''],
-				tasks: ['sass', 'cssmin'],
-				options: {
-					spawn: false,
-					livereload : true
-				}
-			}
-		},
+		// watch: {
+		// 	scripts: {
+		// 		files: [''],
+		// 		tasks: ['coffee', 'concat:scripts', 'uglify'],
+		// 		options: {
+		// 			spawn: false,
+		// 			livereload : true
+		// 		}
+		// 	},
+		// 	styles: {
+		// 		files: [''],
+		// 		tasks: ['sass', 'cssmin'],
+		// 		options: {
+		// 			spawn: false,
+		// 			livereload : true
+		// 		}
+		// 	}
+		// },
 	  	imagemin: {
 		    png: {
 		      options: {
