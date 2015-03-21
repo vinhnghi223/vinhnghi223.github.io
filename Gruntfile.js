@@ -7,7 +7,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-json-minify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	// grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-sass');
 	
 	grunt.initConfig({
@@ -17,7 +17,8 @@ module.exports = function(grunt){
 				dest: 'dist/scripts/app.js'
 			},
 			styles: {
-				src: ['dist/styles/fonts.css','dev/styles/style.css','dev/styles/autocomplete.css'],
+				src: ['dist/styles/fonts.css','dev/styles/style.css','dev/styles/autocomplete.css',
+				'dev/styles/ribbon.css'],
 				dest: 'dist/styles/app.css'
 			}
 		},
@@ -66,24 +67,33 @@ module.exports = function(grunt){
 		      }
 		    }
 		},
-		// watch: {
-		// 	scripts: {
-		// 		files: [''],
-		// 		tasks: ['coffee', 'concat:scripts', 'uglify'],
-		// 		options: {
-		// 			spawn: false,
-		// 			livereload : true
-		// 		}
-		// 	},
-		// 	styles: {
-		// 		files: [''],
-		// 		tasks: ['sass', 'cssmin'],
-		// 		options: {
-		// 			spawn: false,
-		// 			livereload : true
-		// 		}
-		// 	}
-		// },
+		watch: {
+			scripts: {
+				files: 'scripts/**/*.js',
+				// tasks: ['coffee', 'concat:scripts', 'uglify'],
+				tasks: ['concat:scripts'],
+				options: {
+					spawn: false,
+					livereload : true
+				}
+			},
+			styles: {
+				files: 'styles/**/*.css',
+				tasks: ['concat'],
+				options: {
+					spawn: false,
+					livereload : true
+				}
+			},
+			html:{
+				files: 'views/**/*.html',
+				tasks: ['htmlmin'],
+				options: {
+					spawn: false,
+					livereload : true
+				}
+			}
+		},
 	  	imagemin: {
 		    png: {
 		      options: {

@@ -317,10 +317,6 @@ a.small {
   max-width: 130px;
 }
 
-.projectinfo .btn {
-
-}
-
 .links img {
   width: 40px;
   height:auto;
@@ -330,20 +326,6 @@ a.small {
 .col-xs-6, .col-md-4 {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-#feedback-btn{
-  width:50px;
-  height:50px;
-  position: absolute; 
-  right:7px; 
-  top:7px;";
-  border: 1px solid black;
-}
-
-.formgroup #feedback-btn:hover{
-  opacity: 0.8;
-  border: 1px solid black;
 }
 
 /*----------------------------------------*/
@@ -460,4 +442,33 @@ a.small {
 .autocomplete li.active .highlight {
   background: #666;
   color: #fff;
+}
+
+.ribbon {
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+
+  -webkit-box-shadow: 0 0 10px #888;
+     -moz-box-shadow: 0 0 10px #888;
+          box-shadow: 0 0 10px #888;
+
+    background-color: yellow;
+    overflow: hidden;
+    position: fixed;
+    right: -47px;
+    top: 15px;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.ribbon a {
+  display: block;
+  font: 81.25% "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 1px 0;
+  padding: 5px 56px 5px 38px;
+  text-align: center;
+  text-decoration: none;
 }
