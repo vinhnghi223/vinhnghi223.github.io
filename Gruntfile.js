@@ -13,12 +13,17 @@ module.exports = function(grunt){
 	grunt.initConfig({
 		concat: {
 			scripts: {
-				src: ['dev/scripts/autocomplete.js','dev/scripts/app.js','dev/scripts/controllers/main.js'],
+				src: ['dev/scripts/autocomplete.js',
+				'dev/scripts/angularapp.js',
+				'dev/scripts/controllers/main.js'],
 				dest: 'dist/scripts/app.js'
 			},
 			styles: {
-				src: ['dist/styles/fonts.css','dev/styles/style.css','dev/styles/autocomplete.css',
-				'dev/styles/ribbon.css'],
+				src: ['dev/styles/fixed-element.css',
+					'dev/styles/about-me.css',
+					'dist/styles/fonts.css',
+					'dev/styles/style.css',
+					'dev/styles/autocomplete.css'],
 				dest: 'dist/styles/app.css'
 			}
 		},
@@ -39,7 +44,7 @@ module.exports = function(grunt){
 		uglify:{
 			scripts: {
 				files: {
-					'dist/scripts/app.min.js' : 'dist/scripts/app.js'
+					'dist/scripts/my-work.min.js' : 'dev/scripts/my-work.js'
 				}
 			}
 		},
@@ -62,7 +67,8 @@ module.exports = function(grunt){
 		        collapseWhitespace: true
 		      },
 		      files: {                                  
-		        'dist/views/main.html': 'dev/views/main.html',
+		        'dist/views/my-work.html': 'dev/views/my-work.html',
+		        'dist/views/about-me.html': 'dev/views/about-me.html'
 		        //'dist/views/404.html': 'dev/views/404.html' //useless
 		      }
 		    }
@@ -126,7 +132,9 @@ module.exports = function(grunt){
 		    }
 	  	}
 	});
-	grunt.registerTask('build', "Builds the application.",['copy','json-minify','htmlmin','concat','uglify','cssmin']);
+
+	//only html & css tasks do very good!
+	grunt.registerTask('build', "Builds the application.",['htmlmin','concat','cssmin']);
 };
 
 
