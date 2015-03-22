@@ -117,8 +117,10 @@
       -ms-transform: rotate(-49deg);
        -o-transform: rotate(-49deg);
           transform: rotate(-49deg);
-    margin-bottom: 80px;
-    margin-left: -85px;
+/*    margin-bottom: 80px;
+    margin-left: -85px;*/
+    margin-bottom: 33%;
+    margin-left: -93px;
 }
 
 #intro h1.moving{
@@ -185,10 +187,9 @@
 }
 
 #slide-3 .caption p{
-    color: white;
-    margin: 19% 49% 0 5%;
+    color: #630;
+    margin: 10% 57% 0 5%;
     padding: 15px;
-    background-color:rgba(0, 135, 255, 0.7);
 }
 
 #slide-4{
