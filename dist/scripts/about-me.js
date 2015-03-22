@@ -22,8 +22,8 @@ $(window).scroll(function() {
       $('#slide-1 #intro').fadeIn();
     }
 
-    //Slide 3
-    if ($(this).scrollTop()>1100){
+    //Slide 2
+    if ($(this).scrollTop()>1300){
         $('#slide-2 .caption').fadeOut();
     }else{     
         $('#slide-2 .caption').fadeIn();

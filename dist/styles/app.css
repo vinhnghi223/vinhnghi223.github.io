@@ -37,7 +37,12 @@
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  margin-top: 10px;
+  margin-top: 10px; 
+  padding: 5px; 
+  background-color: #fff; 
+  z-index: 99999;
+  position: fixed;
+  text-align: center;
 }
 
 #menu a{
@@ -45,7 +50,7 @@
   text-decoration: none;
 }
 #menu a:hover{
-    color: red;  
+    color: #008f7a;  
 }
 
 #menu:hover{
@@ -195,10 +200,11 @@
 }
 
 #slide-4 .caption{
-    margin: 7% 49% 0 5%;
+    margin: 4% 9% auto 19%;
 }
-#slide-4 .caption p,#slide-4 .caption h1{
+#slide-4 .caption, #slide-4 .caption p, #slide-4 .caption h1{
     color: white;
+    text-align: right; 
 }
 
 #slide-4  #social-media img{
@@ -249,8 +255,6 @@
     font-style: normal;
 
 }
-/* ---------------------------- Style ----------------------- */
-
 /* Reset Styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -376,6 +380,7 @@ a.small {
   font-size: .9rem;
 }
 
+/* ---------------------------- my-work ----------------------- */
 
 /* Search Styles */
 
@@ -387,53 +392,6 @@ a.small {
     text-align: center;
 }
 
-.search h1 {
-  color: #145266;
-}
-
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 1rem;
-    line-height: 140%;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-
-    background: #C61C6F;
-    color: #FCF4DC;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-         -o-user-select: none;
-            user-select: none;
-}
-
-.btn .btn-left {
-  float: left;
-}
-
-.btn .btn-right {
-  float: right;
-}
-
-.btn:hover {
-    background: #09576D;
-}
-
-.search label {
-  display: none;
-}
-
-.search .formgroup input {
-  color: black;
-  display: inline;
-  width: auto;
-}
-
 .search input {
   font-family: callunaregular,Arial;
   padding: 8px 0 8px 8px;
@@ -443,25 +401,7 @@ a.small {
   outline: 0;
 }
 
-#project-search-box{
-  width: 50%;
-  margin-right: 10px;
-  border: 1px solid black;
-}
-.search label.formgroup {
-  display: inline;
-  width: auto;
-}
 
-.search select {
-  display: inline;
-  padding: 4px 0 4px 4px;
-  font-size: 1rem;
-  color: black;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid black;
-  outline: 0;
-}
 
 /* Projects List Styles */
 .projectList {
@@ -621,14 +561,6 @@ a.small {
   overflow: hidden;
 }
 
-/* index.css */
-#menu { 
-    padding: 5px; 
-    background-color: #fff; 
-    z-index: 99999;
-    position: fixed;
-    text-align: center;
-}
 
 /* my-work */
 #back-to-top{

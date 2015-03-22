@@ -22,7 +22,8 @@ module.exports = function(grunt){
 				src: ['dev/styles/fixed-element.css',
 					'dev/styles/about-me.css',
 					'dist/styles/fonts.css',
-					'dev/styles/style.css',
+					'dev/styles/reset.css',
+					'dev/styles/my-work.css',
 					'dev/styles/autocomplete.css'],
 				dest: 'dist/styles/app.css'
 			}

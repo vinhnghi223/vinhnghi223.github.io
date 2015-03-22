@@ -140,10 +140,11 @@
 }
 
 #slide-4 .caption{
-    margin: 7% 49% 0 5%;
+    margin: 4% 9% auto 19%;
 }
-#slide-4 .caption p,#slide-4 .caption h1{
+#slide-4 .caption, #slide-4 .caption p, #slide-4 .caption h1{
     color: white;
+    text-align: right; 
 }
 
 #slide-4  #social-media img{
