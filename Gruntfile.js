@@ -136,6 +136,7 @@ module.exports = function(grunt){
 
 	//only html & css tasks do very good!
 	grunt.registerTask('build', "Builds the application.",['htmlmin','concat','cssmin']);
+	grunt.registerTask('updateJson', "Update Json.",['copy','json-minify']);
 };
 
 
