@@ -37,7 +37,8 @@
     "technologies":"Java, Android, Eclipse, Android Studio",
     "rating":"3",
     "links":[
-      ["demo","http://www.ventoura.com/"]
+      ["demo","http://www.ventoura.com/"],
+      ["playstore","https://play.google.com/store/apps/details?id=com.Mindelo.Ventoura.UI.Activity"]
     ],
     "description":"Offer the local experience for the travellers. Launching soon!"
   },  
