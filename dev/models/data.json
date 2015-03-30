@@ -252,7 +252,7 @@
     "name":"Vinhnghi223.github.io",
     "cat":"Web",
     "technologies":"AngularJS, Grunt, Yeoman, Bower, JavaScript, HTML5, CSS3, Bootstrap",
-    "rating":"2",
+    "rating":"3",
     "links":[
       ["github","https://github.com/vinhnghi223/vinhnghi223.github.io"],
       ["demo","http://vinhnghi223.github.io/#/"]
@@ -285,7 +285,7 @@
     "name":"Giggle Bug",
     "cat":"Game",
     "technologies":"JavaScript, HTML5, CSS3",
-    "rating":"2",
+    "rating":"3",
     "links":[
       ["github","https://github.com/vinhnghi223/Game-Portfolio-Website"],
       ["demo","http://www.codingisloving.com/WEBAPPS/gigglebug/index2.html"]
