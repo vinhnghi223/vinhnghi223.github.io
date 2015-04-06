@@ -317,6 +317,7 @@
   },
   {
     "name":"dtfApp",
+    "noImage":true,
     "cat":"Web",
     "technologies":"JavaScript, HTML5, CSS3, AngularJS, Bootstrap, Grunt",
     "rating":"3",
