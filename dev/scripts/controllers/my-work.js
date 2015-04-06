@@ -1,5 +1,4 @@
-angular.module('vinhnghigithubioApp')
-  .controller('my-work', ['$scope', '$http', function($scope, $http) {
+app.controller('my-work', ['$scope', '$http', function($scope, $http) {
   //autocomplete
   $scope.autocomplete= [];
 
@@ -53,21 +52,19 @@ angular.module('vinhnghigithubioApp')
       }
       return statsArr;
   }
-}]).controller('menuLink', ['$scope','$location',function($scope,$location) {
-  $scope.location=$location;
-  $scope.$watch('location.path()', function(path) {
-    if($scope.location.path()=="/my-work"){
-      $scope.menuLink="#about-me";
-      $scope.menuText="About Me";
-    }else{
-      $scope.menuLink="#my-work";
-      $scope.menuText="My Work";
+
+  $('#back-to-top').hide();
+  //Animation while scrolling
+  $(window).scroll(function() {
+    if ($(this).scrollTop()>1000){
+        $('#back-to-top').fadeIn();
+    }else{     
+       $('#back-to-top').fadeOut();
     }
   });
-  
-}]);
+  $("#back-to-top").click(function() {
+    console.log('click to top');
+      $('html,body').scrollTop(0);
+  });
 
-// -------------------------------- index.js --------------------------------
-$("#menu").click(function() {
-    $('html,body').scrollTop(0);
-});
+}]);

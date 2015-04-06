@@ -1,25 +1,24 @@
 'use strict';
 
 // -------------------------------- angular.js --------------------------------
-angular
-  .module('vinhnghigithubioApp', [
+var app = angular.module('vinhnghigithubioApp', [
     'ngAnimate',
     'ngResource',
     'ngRoute',
     'autocomplete'
-  ]).config(function ($routeProvider) {
+]);
+
+app.config(['$routeProvider',function ($routeProvider) {
   $routeProvider
-    .when('/', {
-      templateUrl: 'dist/views/about-me.html'
-    })
     .when('/about-me', {
-      templateUrl: 'dist/views/about-me.html'
+      templateUrl: 'dev/views/about-me.html',
+      controller: 'about-me'
     })
     .when('/my-work', {
-      templateUrl: 'dist/views/my-work.html',
+      templateUrl: 'dev/views/my-work.html',
       controller: 'my-work'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/about-me'
     });
-});
+}]);

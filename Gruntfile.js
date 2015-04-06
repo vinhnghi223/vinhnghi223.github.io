@@ -3,29 +3,35 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	//grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-json-minify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	//grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-sass');
 	
 	grunt.initConfig({
 		concat: {
-			scripts: {
-				src: ['dev/scripts/autocomplete.js',
-				'dev/scripts/angularapp.js',
-				'dev/scripts/controllers/main.js'],
-				dest: 'dist/scripts/app.js'
-			},
 			styles: {
-				src: ['dev/styles/fixed-element.css',
-					'dev/styles/about-me.css',
-					'dist/styles/fonts.css',
+				src: [
 					'dev/styles/reset.css',
+					'dev/styles/fixed-element.css',
+					'dev/styles/fonts.css',
+					'dev/styles/about-me.css',
 					'dev/styles/my-work.css',
-					'dev/styles/autocomplete.css'],
-				dest: 'dist/styles/app.css'
+					'dev/styles/autocomplete.css'
+					],
+				dest: 'dev/styles/app.css'
+			},
+			scripts: {
+				src: [
+				'dev/scripts/directives/autocomplete.js',
+				'dev/scripts/angularapp.js',
+				'dev/scripts/controllers/menuLink.js',
+				'dev/scripts/controllers/about-me.js',
+				'dev/scripts/controllers/my-work.js',
+				],
+				dest: 'dev/scripts/app.js'
 			}
 		},
 		// sass: {
@@ -45,20 +51,20 @@ module.exports = function(grunt){
 		uglify:{
 			scripts: {
 				files: {
-					'dist/scripts/my-work.min.js' : 'dev/scripts/my-work.js'
+					'dist/scripts/app.min.js' : 'dev/scripts/app.js'
 				}
 			}
 		},
 		cssmin: {
 			app: {
 				files: {
-					'dist/styles/app.min.css': 'dist/styles/app.css'
+					'dist/styles/app.min.css': 'dev/styles/app.css'
 				}
 			}
 		},
 		'json-minify': { //not include copy
 		  build: {
-		    files: 'dist/models/*.json'
+		    files: 'dist/models/data.json'
 		  }
 		},
 		htmlmin: {                                     
@@ -69,8 +75,8 @@ module.exports = function(grunt){
 		      },
 		      files: {                                  
 		        'dist/views/my-work.html': 'dev/views/my-work.html',
-		        'dist/views/about-me.html': 'dev/views/about-me.html'
-		        //'dist/views/404.html': 'dev/views/404.html' //useless
+		        'dist/views/about-me.html': 'dev/views/about-me.html',
+		        'dist/views/404.html': 'dev/views/404.html'
 		      }
 		    }
 		},
@@ -134,9 +140,9 @@ module.exports = function(grunt){
 	  	}
 	});
 
-	//only html & css tasks do very good!
-	grunt.registerTask('build', "Builds the application.",['htmlmin','concat','cssmin']);
-	grunt.registerTask('updateJson', "Update Json.",['copy','json-minify']);
+	grunt.registerTask('buildJson', "Build Json.",['copy','json-minify']);
+	grunt.registerTask('build', "Builds the application.",['buildJson','htmlmin','concat','uglify','cssmin']);
+	
 };
 
 
