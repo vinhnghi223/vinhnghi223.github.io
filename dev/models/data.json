@@ -23,7 +23,7 @@
   {
     "name":"Student Directory",
     "cat":"Web",
-    "technologies":"MongoDB, ExpressJS, AngularJS, NodeJS, Bootstrap",
+    "technologies":"MongoDB, ExpressJS, AngularJS, NodeJS, Bootstrap, Grunt",
     "rating":"3",
     "links":[
       ["github","https://github.com/vinhnghi223/Student-Directory"],
@@ -314,7 +314,18 @@
       ["demo","http://www.codingisloving.com/WEBAPPS/smallprojects/epsvn.com/index.html"]
     ],
     "description":""
-  }                  
+  },
+  {
+    "name":"dtfApp",
+    "cat":"Web",
+    "technologies":"JavaScript, HTML5, CSS3, AngularJS, Bootstrap, Grunt",
+    "rating":"3",
+    "links":[
+      ["github","https://github.com/vinhnghi223/dtfApp"],
+      ["demo","http://www.codingisloving.com/WEBAPPS/datafarmer/index.html#/"]
+    ],
+    "description":""
+  }                    
 ]
 
 
