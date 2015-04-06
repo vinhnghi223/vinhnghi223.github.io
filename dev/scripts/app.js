@@ -354,8 +354,10 @@ app.controller('about-me', ['$scope', function($scope) {
       $('#intro h1, #intro p').removeClass("moving");
   });
 
+  
   //Animation while scrolling
   $(window).scroll(function() {
+    console.log("Width: "+$(window).width());
       //console.log($(this).scrollTop());
       //Slide 1
       if ($(this).scrollTop()>260){
@@ -365,55 +367,29 @@ app.controller('about-me', ['$scope', function($scope) {
       }
 
       //Slide 2
-      if ($(this).scrollTop()>1300){
-          $('#slide-2 .caption').fadeOut();
+      if ($(this).scrollTop()>=300 && $(this).scrollTop()<800){
+          $('#slide-2 .caption.part1').fadeIn();
       }else{     
-          $('#slide-2 .caption').fadeIn();
+          $('#slide-2 .caption.part1').fadeOut();
       }
 
+      if ($(this).scrollTop()>=800 && $(this).scrollTop()<1300){
+          $('#slide-2 .caption.part2').fadeIn();
+      }else{     
+          $('#slide-2 .caption.part2').fadeOut();
+      }      
+
       //Slide 3
-      if ($(this).scrollTop()>1450){
+      if ($(this).scrollTop()>1450 && $(this).scrollTop()<2300){
           $('#slide-3 .caption').fadeIn();
       }else{     
         $('#slide-3 .caption').fadeOut();
       }
+   
    });
 }]);
 app.controller('my-work', ['$scope', '$http', function($scope, $http) {
-  //autocomplete
-  $scope.autocomplete= [];
-
-  $http.get('dist/models/data.json').success(function(data) {
-    $scope.projects = data;
-    $scope.searchOrder = 'rating';
-    $scope.direction='reverse';
-
-    //Generate autocomplete array
-    var projectNameArr=[],catArr=[],techArr=[];
-    for (var i = 0; i < data.length; i++) { 
-      projectNameArr.push(data[i].name);
-      catArr=catArr.concat(data[i].cat.split(", "));
-      techArr=techArr.concat(data[i].technologies.split(", ")); //split each tech word first, then concat
-    }
-    
-    // What we want is a stat array, so instead ['Web', 'Web','Mobile'], we will have ['Web (2)','Mobile (1)']
-    catArr=makeStatsArr(catArr);
-    techArr=makeStatsArr(techArr);
-
-    $scope.autocomplete=projectNameArr.concat(catArr,techArr);
-
-  	$scope.flip=function($event){
-  		$($event.currentTarget).toggleClass("flipped");
-  	}
-
-    //On select a string/item on the autocomplete list
-    $scope.selectItem=function(item){
-      if(item[item.length-1]==")"){
-          $scope.query = item.slice(0,item.indexOf("(")-1);
-      }
-    }
-  });
-
+  //helper functions
   var makeStatsArr=function(originArr){
       var statsArr=[];
       //make a stats obj
@@ -433,7 +409,55 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
       }
       return statsArr;
   }
+  var generateAutoCompleteArray = function(data){
+    //Generate autocomplete array
+    var projectNameArr=[],catArr=[],techArr=[];
+    for (var i = 0; i < data.length; i++) { 
+      projectNameArr.push(data[i].name);
+      catArr=catArr.concat(data[i].cat.split(", "));
+      techArr=techArr.concat(data[i].technologies.split(", ")); //split each tech word first, then concat
+    }
+    
+    // What we want is a stat array, so instead ['Web', 'Web','Mobile'], we will have ['Web (2)','Mobile (1)']
+    catArr=makeStatsArr(catArr);
+    techArr=makeStatsArr(techArr);
 
+    $scope.autocomplete=projectNameArr.concat(catArr,techArr);  
+  }
+  var processData=function(data){
+    $scope.projects = data;
+    $scope.searchOrder = 'rating';
+    $scope.direction='reverse';
+
+    generateAutoCompleteArray(data);  
+  }
+
+  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.0'));
+  $scope.autocomplete= [];
+
+  //get data from local storage
+  if(!savedData){
+    $http.get('dist/models/data.json').success(function(data) {
+      processData(data);
+      savedData = JSON.stringify($scope.projects);
+      localStorage.setItem('lvnPortfolio1.0.0', savedData);
+    });
+  }else{
+    processData(savedData);
+  }
+
+  $scope.flip=function($event){
+      $($event.currentTarget).toggleClass("flipped");
+  }
+
+  //On select a string/item on the autocomplete list
+  $scope.selectItem=function(item){
+    if(item[item.length-1]==")"){
+        $scope.query = item.slice(0,item.indexOf("(")-1);
+    }
+  }
+
+  //Normal JS
   $('#back-to-top').hide();
   //Animation while scrolling
   $(window).scroll(function() {

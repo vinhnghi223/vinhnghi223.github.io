@@ -68,17 +68,25 @@ module.exports = function(grunt){
 		  }
 		},
 		htmlmin: {                                     
-		    'view-main': {                                      
-		      options: {                                 
-		        removeComments: true,
-		        collapseWhitespace: true
-		      },
-		      files: {                                  
-		        'dist/views/my-work.html': 'dev/views/my-work.html',
-		        'dist/views/about-me.html': 'dev/views/about-me.html',
-		        'dist/views/404.html': 'dev/views/404.html'
-		      }
-		    }
+			'views': {                                      
+				options: {                                 
+					removeComments: true,
+					collapseWhitespace: true
+				},
+				files: {                                  
+					'dist/views/my-work.html': 'dev/views/my-work.html',
+					'dist/views/about-me.html': 'dev/views/about-me.html',
+					'dist/views/404.html': 'dev/views/404.html'
+				}
+			},
+			'index': {                                      
+				options: {
+					collapseWhitespace: true
+				},
+				files: {                                  
+					'index.html': 'index-dist.html'
+				}
+			}
 		},
 		watch: {
 			scripts: {

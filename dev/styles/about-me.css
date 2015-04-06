@@ -33,34 +33,32 @@
     height:50%;
 }
 
+.caption p{
+    font-size: 1.4em;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+/* --------------------- Slide 1 --------------------- 1*/
 #slide-1{
-    background: url("../img/bcg_slide-1.jpg") no-repeat center center;
+    background: url("../img/bcg_slide-1.jpg") no-repeat center center; /*6, 18 */
     background-size: cover;
-    /*background-color: #C1C7D6;
-    background-size: cover;*/
 }
 #intro{
     position: absolute;
-    left:45%;
+    left:50%;
     top: 10%;
 }
 
-#intro h1,#intro p{
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;  
-}
+
 #intro h1{
   -webkit-transform: rotate(-49deg);
      -moz-transform: rotate(-49deg);
       -ms-transform: rotate(-49deg);
        -o-transform: rotate(-49deg);
           transform: rotate(-49deg);
-/*    margin-bottom: 80px;
-    margin-left: -85px;*/
-    margin-bottom: 33%;
-    margin-left: -93px;
+    margin-bottom: 45%;
+    margin-left: -173px;
 }
 
 #intro h1.moving{
@@ -71,17 +69,15 @@
           transform: rotate(-45deg);
 }
 
-
-#intro p{
-    margin-left: -55px;
-    margin-top: 10px;
+#intro h1, #intro p{
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;  
 }
 
-#intro p.moving{
-    margin-left: -55px;
-    margin-top: 15px;
-}
-#avt{
+#intro #avt{
     width: 150px;
     height: 150px;
     background: url('../img/avt.png') center center no-repeat;
@@ -91,20 +87,29 @@
     border-radius: 50%;
     border: 5px solid #fff;
     cursor:pointer;
+    margin-left: -75px;
 }
 
-#avt:hover{
-      -webkit-box-shadow: 0 0 10px #888;
-     -moz-box-shadow: 0 0 10px #888;
-          box-shadow: 0 0 10px #888;
+#intro #avt:hover{
+      -webkit-box-shadow: 0 0 10px #000; /*#888*/
+     -moz-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
 }
 
-.caption p{
-    font-size: 1.4em;
-    line-height: 1.8rem;
-    text-align: justify;
+#intro p{
+    margin-left: -175px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
+#intro p.moving{
+    margin-left: -175px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* --------------------- Slide 2 --------------------- 1*/
 #slide-2{
     background: url("../img/bcg_slide-2.jpg") no-repeat center center;
     background-size: cover;
@@ -116,8 +121,10 @@
 #slide-2 .caption p{
     color: #47373f;
     margin: 6% 32% 0 5% ;
+    font-size: 1.45em;
 }
 
+/* --------------------- Slide 3 --------------------- 1*/
 #slide-3{
     background: url("../img/bcg_slide-3.jpg") no-repeat center center;
     background-size: cover;
@@ -132,6 +139,7 @@
     padding: 15px;
 }
 
+/* --------------------- Slide 4 --------------------- 1*/
 #slide-4{
     background: url("../img/bcg_slide-4.jpg") no-repeat center center;
     background-size: cover;
@@ -148,6 +156,10 @@
     text-align: right; 
 }
 
+#slide-4 p{
+    margin-bottom: 150px;
+}
+
 #slide-4  #social-media img{
     width: 40px;
     height: 40px;
@@ -160,7 +172,63 @@
 }
 
 #slide-4  .my-address{
-    font-size: 0.8em;
+    font-size: 1em;
     font-style: italic;
     line-height: 0;
+}
+
+/* --------------------- RESPONSIVENESS ---------------------- */
+
+/* Everything switchs to mobile mode here */
+@media only screen and (max-width: 700px){
+    #slide-3 .caption p{
+        margin: 5% 57% 0 5%;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 500px){
+    #slide-2 .caption p{
+        font-size: 1.2em;
+    }
+
+    #slide-3 .caption p{
+        margin: 2% 30% 0 2%;
+        font-size: 0.9em;
+    }
+ 
+     #slide-4 .caption{
+        margin: 20% 5% auto 5%;
+        text-align: center; 
+     }
+    #slide-4 .caption h1{
+        font-size: 1.2em;
+        text-align: center; 
+    }
+    #slide-4 .caption p{
+        margin-bottom: 90px;
+        font-size: 1em;
+        text-align: center; 
+    }
+
+    #slide-4 .my-address{
+        font-size: 1em;
+    }
+
+}
+@media only screen and (max-width: 365px){
+    #intro p{
+        margin-left: -75px;
+    }
+    #intro p.moving{
+        margin-left: -75px;
+    }
+
+    #slide-2 .caption p{
+        margin: 6% 5% 0 5% ;
+    }
+    #slide-2 .caption.part2 p,{
+        font-size: 1em;
+    }
+
+
 }
