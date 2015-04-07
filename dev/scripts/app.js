@@ -426,13 +426,21 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
   }
   var processData=function(data){
     $scope.projects = data;
-    $scope.searchOrder = 'rating';
-    $scope.direction='reverse';
+    $scope.searchOrder = ['-rating','name'];
+    //$scope.direction='reverse';
 
     generateAutoCompleteArray(data);  
   }
 
-  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.1'));
+  // var clearOldData=function(oldItemArr){
+  //   for(var i=0;i<oldItemArr.length;i++){
+  //     console.log(oldItemArr[i]);
+  //     localStorage.removeItem(oldItemArr[i]);
+  //   }
+  // }
+
+  // var oldItemArr = ['lvnPortfolio1.0.0','lvnPortfolio1.0.1','lvnPortfolio1.0.2'];
+  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.5'));
   $scope.autocomplete= [];
 
   //get data from local storage
@@ -440,11 +448,14 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
     $http.get('dist/models/data.json').success(function(data) {
       processData(data);
       savedData = JSON.stringify($scope.projects);
-      localStorage.setItem('lvnPortfolio1.0.1', savedData);
+      localStorage.clear();
+      localStorage.setItem('lvnPortfolio1.0.5', savedData);
     });
   }else{
     processData(savedData);
   }
+  
+  //clearOldData(oldItemArr);
 
   $scope.flip=function($event){
       $($event.currentTarget).toggleClass("flipped");
