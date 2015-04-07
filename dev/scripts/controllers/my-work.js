@@ -42,7 +42,7 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
     generateAutoCompleteArray(data);  
   }
 
-  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.8')),
+  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.9')),
       mode='production';
   $scope.autocomplete= [];
 
@@ -54,7 +54,7 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
           processData(data);
           savedData = JSON.stringify($scope.projects);
           localStorage.clear();
-          localStorage.setItem('lvnPortfolio1.0.8', savedData);
+          localStorage.setItem('lvnPortfolio1.0.9', savedData);
         });
       }else{
         processData(savedData);
