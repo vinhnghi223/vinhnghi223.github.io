@@ -426,36 +426,39 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
   }
   var processData=function(data){
     $scope.projects = data;
-    $scope.searchOrder = ['-rating','name'];
+    $scope.searchOrder = ['rankId','-rating','name'];
     //$scope.direction='reverse';
 
     generateAutoCompleteArray(data);  
   }
 
-  // var clearOldData=function(oldItemArr){
-  //   for(var i=0;i<oldItemArr.length;i++){
-  //     console.log(oldItemArr[i]);
-  //     localStorage.removeItem(oldItemArr[i]);
-  //   }
-  // }
-
-  // var oldItemArr = ['lvnPortfolio1.0.0','lvnPortfolio1.0.1','lvnPortfolio1.0.2'];
-  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.5'));
+  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.8')),
+      mode='production';
   $scope.autocomplete= [];
 
   //get data from local storage
-  if(!savedData){
-    $http.get('dist/models/data.json').success(function(data) {
-      processData(data);
-      savedData = JSON.stringify($scope.projects);
-      localStorage.clear();
-      localStorage.setItem('lvnPortfolio1.0.5', savedData);
-    });
-  }else{
-    processData(savedData);
+  var loadData=function(savedData,mode){
+    if(mode!='test'){
+      if(!savedData){
+        $http.get('dist/models/data.json').success(function(data) {
+          processData(data);
+          savedData = JSON.stringify($scope.projects);
+          localStorage.clear();
+          localStorage.setItem('lvnPortfolio1.0.8', savedData);
+        });
+      }else{
+        processData(savedData);
+      }
+    }else{ //Test mode
+      $http.get('dev/models/data.json').success(function(data) {
+          processData(data);
+          savedData = JSON.stringify($scope.projects);
+      });
+    }
   }
   
-  //clearOldData(oldItemArr);
+  //mode='test';
+  loadData(savedData,mode);
 
   $scope.flip=function($event){
       $($event.currentTarget).toggleClass("flipped");

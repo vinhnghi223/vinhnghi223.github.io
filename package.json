@@ -1,5 +1,5 @@
 {
-  "name": "Nghi's portfolio",
+  "name": "NghiPortfolio",
   "version": "1.0.0",
   "description": "",
   "main": "Gruntfile.js",
@@ -13,6 +13,9 @@
     "grunt-json-minify": "^0.4.0",
     "connect": "^3.3.4",
     "serve-static": "^1.9.1"
+  },
+  "devDependencies": {
+    "mongodb": "^1.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
