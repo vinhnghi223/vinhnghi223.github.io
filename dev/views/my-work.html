@@ -2,11 +2,14 @@
     <autocomplete ng-model="query" attr-placeholder="Search my work (e.g type 'Web', AngularJS' or 'Android' etc. )" data="autocomplete" on-select="selectItem"></autocomplete> 
 </div>
 <div class="projectList ul">
-  <div ng-animate="'animate'" class="col-xs-6 col-md-4 project cf li" ng-repeat="item in projects  | filter: query | orderBy:searchOrder" style="cursor: pointer;">
+  <div class="col-xs-6 col-md-4 project cf li" style="cursor: pointer;"
+  ng-animate="'animate'"  ng-repeat="item in projects  | filter: query | orderBy:searchOrder">
     
     <div class="info">
-      <div class="card effect__click" ng-click="flip($event)">
-        <div class="card__front" ng-attr-style="background-image: url('dist/img/project-thumbnails/{{item.noImage ? 'no-image' : item.name}}.png')" title="click me!">
+      <div class="card effect__click" 
+      ng-click="flip($event)">
+        <div class="card__front" title="click me!"
+        ng-attr-style="background-image: url('dist/img/project-thumbnails/{{item.noImage ? 'no-image' : item.name}}.png')">
           <h2 title="Project Name">{{item.name}}</h2>
         </div><!--front-->
         <div class="card__back" style="padding:5px 5px;">
