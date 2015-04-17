@@ -7,7 +7,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-json-minify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	//grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-sass');
 	
 	grunt.initConfig({
@@ -90,24 +90,32 @@ module.exports = function(grunt){
 		},
 		watch: {
 			scripts: {
-				files: 'scripts/**/*.js',
+				files: 'dev/scripts/**/*.js',
 				// tasks: ['coffee', 'concat:scripts', 'uglify'],
-				tasks: ['concat:scripts'],
+				tasks: ['concat:scripts','uglify'],
+				options: {
+					spawn: false,
+					livereload : true
+				}
+			},
+			json:{
+				files: 'dev/models/data.json',
+				tasks: ['copy','json-minify'],
 				options: {
 					spawn: false,
 					livereload : true
 				}
 			},
 			styles: {
-				files: 'styles/**/*.css',
-				tasks: ['concat'],
+				files: 'dev/styles/**/*.css',
+				tasks: ['concat:styles','cssmin'],
 				options: {
 					spawn: false,
 					livereload : true
 				}
 			},
 			html:{
-				files: 'views/**/*.html',
+				files: 'dev/views/**/*.html',
 				tasks: ['htmlmin'],
 				options: {
 					spawn: false,
@@ -115,37 +123,37 @@ module.exports = function(grunt){
 				}
 			}
 		},
-	  	imagemin: {
-		    png: {
-		      options: {
-		        optimizationLevel: 7
-		      },
-		      files: [
-		        {
-		          expand: true,
-		          cwd: 'dev/img/',
-		          src: ['**/*.png'],
-		          dest: 'dist/img/',
-		          ext: '.png'
-		        }
-		      ]
-		    },
-		    jpg: {
-		      options: {
-		        progressive: true
-		      },
-		      files: [
-		        {
-		          // Set to true to enable the following options…
-		          expand: true,
-		          cwd: 'dev/img/',
-		          src: ['**/*.jpg'],
-		          dest: 'dist/img/',
-		          ext: '.jpg'
-		        }
-		      ]
-		    }
-	  	}
+	  	// imagemin: {
+		  //   png: {
+		  //     options: {
+		  //       optimizationLevel: 7
+		  //     },
+		  //     files: [
+		  //       {
+		  //         expand: true,
+		  //         cwd: 'dev/img/',
+		  //         src: ['**/*.png'],
+		  //         dest: 'dist/img/',
+		  //         ext: '.png'
+		  //       }
+		  //     ]
+		  //   },
+		  //   jpg: {
+		  //     options: {
+		  //       progressive: true
+		  //     },
+		  //     files: [
+		  //       {
+		  //         // Set to true to enable the following options…
+		  //         expand: true,
+		  //         cwd: 'dev/img/',
+		  //         src: ['**/*.jpg'],
+		  //         dest: 'dist/img/',
+		  //         ext: '.jpg'
+		  //       }
+		  //     ]
+		  //   }
+	  	// }
 	});
 
 	grunt.registerTask('buildJson', "Build Json.",['copy','json-minify']);

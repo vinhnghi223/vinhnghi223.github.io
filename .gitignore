@@ -1,2 +1,4 @@
 node_modules/
 images_lib/
+.DS_Store
+npm_debug.log

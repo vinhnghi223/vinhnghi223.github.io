@@ -3,7 +3,7 @@
 
 var autocomplete = angular.module('autocomplete', []);
 
-autocomplete.directive('autocomplete', function() {
+autocomplete.directive('autocomplete', ['$timeout',function($timeout) {
   var index = -1;
 
   return {
@@ -42,8 +42,8 @@ autocomplete.directive('autocomplete', function() {
       $scope.completing = false;
 
       // starts autocompleting on typing in something
-      $scope.$watch('searchParam', function(newValue, oldValue){
 
+      $scope.$watch('searchParam', function(newValue, oldValue){
         if (oldValue === newValue || (!oldValue && $scope.initLock)) {
           return;
         }
@@ -55,8 +55,10 @@ autocomplete.directive('autocomplete', function() {
         }
 
         // function thats passed to on-type attribute gets executed
-        if($scope.onType)
-          $scope.onType($scope.searchParam);
+        
+        if($scope.onType){
+          $scope.onType($scope.searchParam);     
+        }
       });
 
       // for hovering over suggestions
@@ -262,7 +264,7 @@ autocomplete.directive('autocomplete', function() {
           </ul>\
         </div>'
   };
-});
+}]);
 
 autocomplete.filter('highlight', ['$sce', function ($sce) {
   return function (input, searchParam) {
@@ -432,7 +434,7 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
     generateAutoCompleteArray(data);  
   }
 
-  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.9')),
+  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.10')),
       mode='production';
   $scope.autocomplete= [];
 
@@ -444,7 +446,7 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
           processData(data);
           savedData = JSON.stringify($scope.projects);
           localStorage.clear();
-          localStorage.setItem('lvnPortfolio1.0.9', savedData);
+          localStorage.setItem('lvnPortfolio1.0.10', savedData);
         });
       }else{
         processData(savedData);
