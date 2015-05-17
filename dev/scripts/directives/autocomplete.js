@@ -100,6 +100,7 @@ autocomplete.directive('autocomplete', ['$timeout',function($timeout) {
 
     }],
     link: function(scope, element, attrs){
+      console.log('element',element);
 
       setTimeout(function() {
         scope.initLock = false;

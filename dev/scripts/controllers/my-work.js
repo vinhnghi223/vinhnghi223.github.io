@@ -1,24 +1,22 @@
-app.controller('my-work', ['$scope', '$http', function($scope, $http) {
-  //helper functions
+app.factory('autocompleteArrServ', [function() {
+
   var makeStatsArr=function(originArr){
       var statsArr=[];
-      //make a stats obj
+      
+      //make a stats obj: count the number of occurence of an elm in an array
       var statsObj = originArr.reduce(function (acc, curr) { 
-        if (typeof acc[curr] == 'undefined') {
-          acc[curr] = 1;
-        } else {
-          acc[curr] += 1;
-        }
+        acc[curr] = (typeof acc[curr] == 'undefined') ? 1 : acc[curr]+1
         return acc;
       },{});
-      //make a stats array
+
+      //transform a statsObj to a stats array : {Web: 15} -> ["Web (15)"]
       for (var key in statsObj) {
-        if (statsObj.hasOwnProperty(key)) {
-          statsArr.push(key+" ("+statsObj[key]+")");
-        }
+        statsObj.hasOwnProperty(key) && statsArr.push(key+" ("+statsObj[key]+")"); //single line if
       }
+
       return statsArr;
   }
+
   var generateAutoCompleteArray = function(data){
     //Generate autocomplete array
     var projectNameArr=[],catArr=[],techArr=[];
@@ -29,22 +27,47 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
     }
     
     // What we want is a stat array, so instead ['Web', 'Web','Mobile'], we will have ['Web (2)','Mobile (1)']
-    catArr=makeStatsArr(catArr);
-    techArr=makeStatsArr(techArr);
+    catArr=makeStatsArr(catArr); //categories
+    techArr=makeStatsArr(techArr); // technologies
 
-    $scope.autocomplete=projectNameArr.concat(catArr,techArr);  
+    return projectNameArr.concat(catArr,techArr);  
   }
+
+  return{
+    generate: generateAutoCompleteArray
+  }
+
+}])
+.factory('back2Top', [function() {
+  var init = function(){
+    //Normal JS
+    $('#back-to-top').hide();
+    //Animation while scrolling
+    $(window).scroll(function() {
+      $(this).scrollTop()>1000 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut()
+    });
+    $("#back-to-top").click(function() { $('html,body').scrollTop(0); }); 
+  }
+
+  return {
+    init: init
+  }
+
+}])
+.controller('my-work', ['$scope', '$http','autocompleteArrServ','back2Top',
+  function($scope, $http, autocompleteArrServ, back2Top) {
+
+
   var processData=function(data){
     $scope.projects = data;
     $scope.searchOrder = ['rankId','-rating','name'];
     //$scope.direction='reverse';
-
-    generateAutoCompleteArray(data);  
+    $scope.autocomplete=autocompleteArrServ.generate(data);  
   }
 
   var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.10')),
       mode='production';
-  $scope.autocomplete= [];
+  
 
   //get data from local storage
   var loadData=function(savedData,mode){
@@ -81,19 +104,6 @@ app.controller('my-work', ['$scope', '$http', function($scope, $http) {
     }
   }
 
-  //Normal JS
-  $('#back-to-top').hide();
-  //Animation while scrolling
-  $(window).scroll(function() {
-    if ($(this).scrollTop()>1000){
-        $('#back-to-top').fadeIn();
-    }else{     
-       $('#back-to-top').fadeOut();
-    }
-  });
-  $("#back-to-top").click(function() {
-    console.log('click to top');
-      $('html,body').scrollTop(0);
-  });
+  back2Top.init();
 
 }]);
