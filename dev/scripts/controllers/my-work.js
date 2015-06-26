@@ -65,7 +65,7 @@ app.factory('autocompleteArrServ', [function() {
     $scope.autocomplete=autocompleteArrServ.generate(data);  
   }
 
-  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.11')),
+  var savedData = JSON.parse(localStorage.getItem('lvnPortfolio1.0.12')),
       mode='production';
   
 
@@ -77,7 +77,7 @@ app.factory('autocompleteArrServ', [function() {
           processData(data);
           savedData = JSON.stringify($scope.projects);
           localStorage.clear();
-          localStorage.setItem('lvnPortfolio1.0.11', savedData);
+          localStorage.setItem('lvnPortfolio1.0.12', savedData);
         });
       }else{
         processData(savedData);

@@ -291,7 +291,12 @@
 		"cat": "Web",
 		"technologies": "AngularJS, JavaScript, CoffeeScript, HTML5, CSS3, Bootstrap, Grunt",
 		"rating": 3,
-		"links": [],
+		"links": [
+			[
+				"demo",
+				"http://www.ba-group.fi/data-farmer/"
+			]		
+		],
 		"description": "",
 		"rankId": 20
 	},
