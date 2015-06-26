@@ -287,23 +287,13 @@
 	},
 	{
 		"_id": "55239b8bebd4f06aa95fed21",
-		"name": "zdtfApp",
-		"noImage": true,
+		"name": "Datafarmer UI",
 		"cat": "Web",
-		"technologies": "JavaScript, HTML5, CSS3, AngularJS, Bootstrap, Grunt",
+		"technologies": "AngularJS, JavaScript, CoffeeScript, HTML5, CSS3, Bootstrap, Grunt",
 		"rating": 3,
-		"links": [
-			[
-				"github",
-				"https://github.com/vinhnghi223/dtfApp"
-			],
-			[
-				"demo",
-				"http://www.codingisloving.com/WEBAPPS/datafarmer/index.html#/"
-			]
-		],
+		"links": [],
 		"description": "",
-		"rankId": 53
+		"rankId": 20
 	},
 	{
 		"_id": "55239b8bebd4f06aa95fed20",
