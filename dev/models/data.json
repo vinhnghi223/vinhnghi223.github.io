@@ -103,7 +103,7 @@
 			],
 			[
 				"demo",
-				"http://www.codingisloving.com/WEBAPPS/CRoom-and-Offices-Finder/index.html"
+				"http://vinhnghi223.github.io/Room-and-Offices-Finder/"
 			],
 			[
 				"download",
@@ -130,7 +130,7 @@
 			],
 			[
 				"demo",
-				"http://goo.gl/tuD8Vz"
+				"http://vinhnghi223.github.io/Pedometer-App/Pedometer-Web-App/"
 			],
 			[
 				"download",
@@ -214,7 +214,7 @@
 			],
 			[
 				"demo",
-				"http://goo.gl/5D9V7i"
+				"http://vinhnghi223.github.io/aiesec-hy.fi/"
 			]
 		],
 		"description": "",
@@ -274,12 +274,8 @@
 		"rating": 3,
 		"links": [
 			[
-				"github",
-				"https://github.com/vinhnghi223/Game-Portfolio-Website"
-			],
-			[
 				"demo",
-				"http://www.codingisloving.com/WEBAPPS/gigglebug/index2.html"
+				"http://www.gigglebug.tv/"
 			]
 		],
 		"description": "",
@@ -336,7 +332,7 @@
 			],
 			[
 				"demo",
-				"http://www.codingisloving.com/WEBAPPS/smallprojects/epsvn.com/index.html"
+				"http://vinhnghi223.github.io/WEB-APPS-PROJECTS/epsvn.com/home.html"
 			]
 		],
 		"description": "",
@@ -371,7 +367,11 @@
 			[
 				"demo",
 				"http://www.codingisloving.com/"
-			]
+			],
+      [
+        "retired",
+        "#/my-work"
+      ]
 		],
 		"description": "",
 		"rankId": 63
@@ -389,7 +389,7 @@
 			],
 			[
 				"demo",
-				"http://www.codingisloving.com/WEBAPPS/CRestaurant-App/index.html"
+				"http://vinhnghi223.github.io/Product-Showcase-App/"
 			]
 		],
 		"description": "",
@@ -408,7 +408,7 @@
 			],
 			[
 				"demo",
-				"http://goo.gl/bRNuR0"
+				"http://vinhnghi223.github.io/HTML5-GAMES/The%20Great%20Escape/"
 			],
 			[
 				"youtube",
@@ -484,7 +484,7 @@
 			],
 			[
 				"demo",
-				"http://goo.gl/7uUqLx"
+				"http://vinhnghi223.github.io/HTML5-GAMES/Lake%20Volleyball/"
 			]
 		],
 		"description": "",
@@ -543,7 +543,7 @@
 			],
 			[
 				"demo",
-				"http://htmlpreview.github.io/?https://github.com/vinhnghi223/WEB-APPS-PROJECTS/blob/gh-pages/QR-Generator/www/index.html"
+				"https://vinhnghi223.github.io/WEB-APPS-PROJECTS/QR-Generator/www/"
 			]
 		],
 		"description": "",
