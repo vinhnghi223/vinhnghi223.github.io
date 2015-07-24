@@ -72,6 +72,25 @@
 		"rankId": 21
 	},
 	{
+		"_id": "",
+		"name": "Near By Location Web App",
+		"cat": "Web App",
+		"technologies": "AngularJS, JavaScript, Jasmine, Karma, Protractor, Unit testing, E2E testing",
+		"rating": 3,
+		"links": [
+      [
+        "github",
+        "https://github.com/vinhnghi223/Near-By-Location-Android-App"
+      ],
+      [
+        "demo",
+        "http://vinhnghi223.github.io/nLocationApp/"
+      ]
+		],
+		"description": "NearByLocation Web app using Foursquare API v2",
+		"rankId": 21
+	},
+	{
 		"_id": "55239b8bebd4f06aa95fed0a",
 		"name": "Laurea Room Finder",
 		"cat": "Mobile App",
