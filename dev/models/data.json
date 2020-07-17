@@ -1,5 +1,137 @@
 [
 	{
+		"_id": "a6",
+		"name": "moment-calendar-2",
+		"cat": "Web",
+		"technologies": "NodeJS, JavaScript",
+		"noImage": true,
+		"rating": 3,
+		"links": [
+			[
+				"github",
+				"https://github.com/vinhnghi223/moment-calendar-2"
+			],
+			[
+				"npm",
+				"https://www.npmjs.com/package/moment-calendar-2"
+			],
+			[
+				"demo",
+				"https://vinhnghi223.github.io/moment-calendar-2/"
+			]
+		],
+		"description": "A super lightweight, easy-to-use yet powerful Node module to create month calendar where each date is a momentJS date.",
+		"rankId": 0
+	},
+	{
+		"_id": "a5",
+		"name": "ng-paginator",
+		"cat": "Web",
+		"technologies": "AngularJs, JavaScript",
+		"noImage": true,
+		"rating": 3,
+		"links": [
+			[
+				"github",
+				"https://github.com/vinhnghi223/ng-paginator"
+			],
+			[
+				"npm",
+				"https://www.npmjs.com/package/ng-paginator"
+			],
+			[
+				"demo",
+				"https://vinhnghi223.github.io/ng-paginator/"
+			]
+		],
+		"description": "Pagination component for Angular 1.x, displaying the sequence of numbers assigned to pages in a book or periodical.",
+		"rankId": 0
+	},
+	{
+		"_id": "a4",
+		"name": "foundation-apps-modal",
+		"cat": "Web",
+		"technologies": "AngularJs, JavaScript",
+		"noImage": true,
+		"rating": 3,
+		"links": [
+			[
+				"demo",
+				"http://vinhnghi223.github.io/foundation-apps-modal/#"
+			],
+			[
+				"npm",
+				"https://www.npmjs.com/package/foundation-apps-modal"
+			],
+			[
+				"github",
+				"https://github.com/vinhnghi223/foundation-apps-modal"
+			]
+		],
+		"description": "Zurb Foundation-apps modal with angular promises.",
+		"rankId": 0
+	},
+	{
+		"_id": "a3",
+		"name": "ng-checkbox",
+		"cat": "JavaScript, Gulp",
+		"technologies": "JavaScript",
+		"noImage": true,
+		"rating": 3,
+		"links": [
+			[
+				"demo",
+				"http://vinhnghi223.github.io/ng-checkbox/#/demo"
+			],
+			[
+				"npm",
+				"https://www.npmjs.com/package/ng-checkbox"
+			],
+			[
+				"github",
+				"https://github.com/vinhnghi223/ng-checkbox"
+			]
+		],
+		"description": "A gulp plugin that helps you automate releasing and publishing to NPM easy than ever! All you need to do is issue gulp release. I've used it in my pet project as well as used it to publish itself!",
+		"rankId": 0
+	},
+	{
+		"_id": "a2",
+		"name": "gulp-release-easy",
+		"noImage": true,
+		"cat": "NodeJS",
+		"technologies": "JavaScript, NodeJS",
+		"rating": 3,
+		"links": [
+			[
+				"npm",
+				"https://www.npmjs.com/package/gulp-release-easy"
+			],
+			[
+				"github",
+				"https://github.com/vinhnghi223/gulp-release-easy"
+			]
+		],
+		"description": "A gulp plugin that helps you automate releasing and publishing to NPM easy than ever! All you need to do is issue gulp release. I've used it in my pet project as well as used it to publish itself!",
+		"rankId": 0
+	},
+	{
+		"_id": "a1",
+		"name": "venues-rest-api",
+		"noImage": true,
+		"cat": "API",
+		"technologies": "Java, Springboot",
+		"rating": 3,
+		"links": [
+			[
+				"github",
+				"https://github.com/vinhnghi223/venues-rest-api"
+			]
+		],
+		"description": "REST API to fetch venues data using Springboot",
+		"rankId": 0
+	},
+	{
 		"_id": "abc",
 		"name": "RBO Banking",
 		"cat": "Web",
@@ -8,10 +140,10 @@
 		"links": [
 			[
 				"demo",
-				"not available yet"
+				"https://netbank.nordea.fi/#!/"
 			]
 		],
-		"description": "Relationship Banking Online - new Nordea private netbank for household customers",
+		"description": "Relationship Banking Online - new private netbank project for household customers",
 		"rankId": 0
 	},
 	{
@@ -35,7 +167,7 @@
 	},
 	{
 		"_id": "55239b8bebd4f06aa95fed1b",
-		"name": "Vinhnghi223.github.io",
+		"name": "vinhnghi223.github.io",
 		"cat": "Web",
 		"technologies": "AngularJS, Grunt, MongoDB, Yeoman, Bower, JavaScript, HTML5, CSS3, Bootstrap",
 		"rating": 3,
