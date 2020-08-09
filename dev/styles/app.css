@@ -358,7 +358,9 @@ a.small {
 }
 
 #slide-4 .caption{
-    margin: 4% 9% auto 19%;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 60%;
 }
 #slide-4 .caption, #slide-4 .caption p, #slide-4 .caption h1{
     color: white;
