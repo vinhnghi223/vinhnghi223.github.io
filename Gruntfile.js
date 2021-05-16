@@ -9,6 +9,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-run');
 	
 	grunt.initConfig({
 		concat: {
@@ -84,7 +85,8 @@ module.exports = function(grunt){
 					collapseWhitespace: true
 				},
 				files: {                                  
-					'index.html': 'index-dist.html'
+					'index-dist.html': 'index-dev.html',
+					'index.html': 'index-dev.html'
 				}
 			}
 		},
@@ -154,11 +156,22 @@ module.exports = function(grunt){
 		  //     ]
 		  //   }
 	  	// }
+		run: {
+			options: {
+				// Task-specific options go here.
+			},
+			server: {
+				cmd: 'node',
+				args: [
+				'server.js'
+				]
+			}
+		}
 	});
 
 	grunt.registerTask('buildJson', "Build Json.",['copy','json-minify']);
 	grunt.registerTask('build', "Builds the application.",['buildJson','htmlmin','concat','uglify','cssmin']);
-	
+	grunt.registerTask('default', ['build','run']);
 };
 
 
